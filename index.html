@@ -7,6 +7,47 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <div class="container">
+        
+        <!-- TÍTULO -->
+        <header class="titulo">
         <h1>To-Do List</h1>
-    </body>
+        </header>
+
+        <!-- BLOQUE DE CONTROLES Y LISTAS -->
+        <main class="contenido">
+        
+            <!-- FILTROS Y ACCIONES -->
+            <div class="filtros">
+                <input type="text" placeholder="Buscador" class="buscador">
+                <label for="filtro-categoria">Filtrar por categoría</label>
+                <select id="filtro-categoria" class="filtro-categoria">
+                    <option value="">Selecciona una categoría</option>
+                </select>
+                <label for="filtro-completadas">Filtrar por categoría</label>
+                <select id="filtro-completadas" class="filtro-completadas">
+                    <option value="">Todas</option>
+                    <option value="completadas">Completadas</option>
+                    <option value="en-proceso">En proceso</option>
+                    <option value="no-completadas">No completadas</option>
+                </select>
+                <button class="crear-lista">Crear lista</button>
+            </div>
+
+            <!-- LISTAS -->
+            <section class="listas">
+                <div class="cabecera-tareas">
+                    <span class="columna nombre">Nombre</span>
+                    <span class="columna descripcion">Descripción</span>
+                    <span class="columna categoria">Categoría</span>
+                    <span class="columna estado">Estado</span>
+                    <span class="columna fecha">Fecha</span>
+                </div>
+                <p>Aquí las listas</p>
+            </section>  
+            
+        </main>
+    </div>
+</body>
+
 </html>
